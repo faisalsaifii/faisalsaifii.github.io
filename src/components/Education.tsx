@@ -27,8 +27,8 @@ export default function Education() {
 		},
 	]
 	return (
-		<div className='flex flex-col gap-3'>
-			<h2 className='font-bold text-5xl leading-relaxed'>Experience</h2>
+		<div id='education' className='flex flex-col gap-3'>
+			<h2 className='font-bold text-5xl leading-relaxed'>Education</h2>
 			<div className='flex flex-col gap-6'>
 				{educations.map(
 					(
@@ -36,7 +36,7 @@ export default function Education() {
 						index
 					) => (
 						<div className='flex flex-col gap-2' key={index}>
-							<div className='flex justify-between'>
+							<div className='flex flex-col sm:flex-row justify-between'>
 								<a className='flex flex-col' href={link}>
 									<span className='text-2xl font-semibold'>
 										{degree}

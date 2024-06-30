@@ -2,23 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--background: #fff;
-	--foreground: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #000;
-		--foreground: #fff;
-	}
-}
-
-body {
-	background: var(--background);
-	color: var(--foreground);
-}
-
 a:hover {
 	color: #16b4fe;
+}
+
+.animate-in,
+h1,
+h2,
+span,
+p,
+a,
+img {
+	animation: animateIn 0.3s ease 0.15s both;
+}
+
+@keyframes animateIn {
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

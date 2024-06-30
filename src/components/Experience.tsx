@@ -6,6 +6,7 @@ export default function Experience() {
 		link: string
 		from: string
 		to: string
+		icon: string
 	}> = [
 		{
 			role: 'Product Engineer',
@@ -15,6 +16,7 @@ export default function Experience() {
 			link: 'https://juspay.in',
 			from: 'July 2023',
 			to: 'Present',
+			icon: '/icons/juspay.svg',
 		},
 		{
 			role: 'Full Stack Developer',
@@ -24,6 +26,7 @@ export default function Experience() {
 			link: 'https://www.intechcircuits.com',
 			from: 'August 2022',
 			to: 'January 2023',
+			icon: '/icons/ic.png',
 		},
 		{
 			role: 'Full Stack Developer',
@@ -32,28 +35,39 @@ export default function Experience() {
 			link: 'https://www.fiverr.com/faisalsaifii',
 			from: 'September 2022',
 			to: 'Present',
+			icon: '/icons/fiverr.svg',
 		},
 	]
 	return (
-		<div className='flex flex-col gap-3'>
+		<div id='experience' className='flex flex-col gap-3'>
 			<h2 className='font-bold text-5xl leading-relaxed'>Experience</h2>
 			<div className='flex flex-col gap-6'>
 				{experiences.map(
-					({ role, company, description, link, from, to }, index) => (
+					(
+						{ role, company, description, link, from, to, icon },
+						index
+					) => (
 						<div className='flex flex-col gap-2' key={index}>
-							<div className='flex justify-between'>
-								<a className='flex flex-col' href={link}>
-									<span className='text-2xl font-semibold'>
-										{role}
-									</span>
+							<div className='flex gap-1'>
+								<img
+									src={icon}
+									className='aspect-square h-[4.5rem] w-[4.5rem] sm:h-12 sm:w-12 m-1'
+								/>
+								<div className='flex flex-col sm:flex-row w-full justify-between'>
+									<a className='flex flex-col' href={link}>
+										<span className='text-2xl font-semibold'>
+											{role}
+										</span>
+										<span className='font-light'>
+											{company}
+										</span>
+									</a>
 									<span className='font-light'>
-										{company}
+										{from} - {to}
 									</span>
-								</a>
-								<span className='font-light'>
-									{from} - {to}
-								</span>
+								</div>
 							</div>
+
 							<p className='font-thin'>{description}</p>
 						</div>
 					)

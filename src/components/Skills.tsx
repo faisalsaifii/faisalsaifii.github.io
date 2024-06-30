@@ -10,7 +10,6 @@ export default function Skills() {
 			examples:
 				'NodeJS, ExpressJS, Flask, REST APIs, Python, C++, Supabase, Firebase, Spring Boot',
 		},
-
 		{
 			type: 'Mobile App Development (Android & iOS)',
 			examples: 'React Native, Flutter',
@@ -25,7 +24,7 @@ export default function Skills() {
 	]
 
 	return (
-		<div className='flex flex-col gap-3'>
+		<div id='skills' className='flex flex-col gap-3'>
 			<h2 className='font-bold text-5xl leading-relaxed'>
 				Technical Skills
 			</h2>
