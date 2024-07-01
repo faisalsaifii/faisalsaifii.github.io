@@ -51,10 +51,14 @@ export default function Experience() {
 							<div className='flex gap-1'>
 								<img
 									src={icon}
-									className='aspect-square h-[4.5rem] w-[4.5rem] sm:h-12 sm:w-12 m-1'
+									className='aspect-square h-[4.5rem] w-[4.5rem] sm:h-12 sm:w-12 m-1 rounded-full'
 								/>
 								<div className='flex flex-col sm:flex-row w-full justify-between'>
-									<a className='flex flex-col' href={link}>
+									<a
+										className='flex flex-col'
+										href={link}
+										target='_blank'
+									>
 										<span className='text-2xl font-semibold'>
 											{role}
 										</span>

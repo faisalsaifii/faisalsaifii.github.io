@@ -14,7 +14,7 @@ export default function ScrollToTop() {
 	return (
 		visible && (
 			<button
-				className='fixed bottom-0 right-0 m-7 sm:m-10 aspect-square rounded-full bg-orange-400 text-black cursor-pointer'
+				className='fixed bottom-0 right-0 m-7 sm:m-10 aspect-square rounded-full bg-purple-400 cursor-pointer'
 				onClick={() =>
 					window.scrollTo({
 						top: 0,

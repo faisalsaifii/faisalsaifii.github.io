@@ -1,5 +1,9 @@
 export default function Header() {
-	const socials: Array<{ text: string; icon: string; link: string }> = [
+	const socials: Array<{
+		text: string
+		icon: string
+		link: string
+	}> = [
 		{
 			text: 'Linkedin',
 			icon: 'linkedin.svg',
@@ -34,7 +38,7 @@ export default function Header() {
 				</p>
 				<div className='flex gap-3'>
 					{socials.map(({ text, icon, link }, index) => (
-						<a href={link} key={index}>
+						<a href={link} key={index} target='_blank'>
 							<img width={38} src={`/icons/${icon}`} alt={text} />
 						</a>
 					))}

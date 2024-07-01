@@ -37,7 +37,11 @@ export default function Education() {
 					) => (
 						<div className='flex flex-col gap-2' key={index}>
 							<div className='flex flex-col sm:flex-row justify-between'>
-								<a className='flex flex-col' href={link}>
+								<a
+									className='flex flex-col'
+									href={link}
+									target='_blank'
+								>
 									<span className='text-2xl font-semibold'>
 										{degree}
 									</span>
