@@ -9,20 +9,48 @@ a:hover {
 .animate-in,
 h1,
 h2,
-span,
 p,
-a,
-img {
-	animation: animateIn 0.3s ease 0.15s both;
+a {
+	animation: animateIn 2s ease 0s both;
+}
+
+@layer utilities {
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	.no-scrollbar {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
 }
 
 @keyframes animateIn {
 	0% {
 		opacity: 0;
-		transform: translateY(10px);
+		transform: translateY(20px);
 	}
 	100% {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+.slide-track {
+	animation: scroll 50s linear infinite;
+	width: calc(250px * 14);
+}
+
+.slide-track-slow {
+	animation: scroll 60s linear infinite;
+	width: calc(250px * 14);
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc(-250px * 7));
 	}
 }
