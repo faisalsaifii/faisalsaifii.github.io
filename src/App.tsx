@@ -4,7 +4,6 @@ import Experience from './components/Experience'
 import Introduction from './components/Introduction'
 import Projects from './components/Projects'
 import ScrollToTop from './components/ScrollToTop'
-import Skills from './components/Skills'
 
 export default function App() {
 	return (
@@ -13,9 +12,8 @@ export default function App() {
 			<div className="h-screen overflow-y-scroll overflow-x-hidden scroll-smooth no-scrollbar snap-y snap-mandatory text-white">
 				<Introduction />
 				<Experience />
-				{/* <Projects /> */}
+				<Projects />
 				<Education />
-				{/* <Skills /> */}
 			</div>
 			<ScrollToTop />
 		</>

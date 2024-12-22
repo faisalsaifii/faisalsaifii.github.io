@@ -14,6 +14,10 @@ a {
 	animation: animateIn 2s ease 0s both;
 }
 
+.animate-in-view {
+	animation-timeline: view(block 80% 10%);
+}
+
 @layer utilities {
 	.no-scrollbar::-webkit-scrollbar {
 		display: none;

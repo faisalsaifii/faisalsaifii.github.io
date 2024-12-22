@@ -54,11 +54,7 @@ export const resume: resumeType = {
 			role: 'Product Engineer',
 			company: 'Juspay Technologies',
 			description: `
-				Technologies: Python, Flask, MySQL, PostgreSQL, Tailwind CSS, React, Haskell, Rescript, REST, CRUD
 				Worked as part of various teams to automate the process of integration by 70%
-				Juspay Genius: AI chatbot integrated in Slack aimed to resolve merchant queries
-				Onboarding Assistant: Interface for merchants to track their integration steps
-				Juspay Portal: Dashboard constituting of all that Juspay provides
 			`,
 			link: 'https://juspay.in',
 			from: 'July 2023',
@@ -69,7 +65,7 @@ export const resume: resumeType = {
 			role: 'Full Stack Developer',
 			company: 'Intech Circuits',
 			description:
-				'Technologies: NextJS, Typescript, Tailwind CSS, APIs, Supabase, Server Actions, HTML, CSS, JavaScript. Increased the company reach by 50% by developing a landing website. Developed a platform for customers to place orders online: Get Your PCB',
+				'Increased the company reach by 50% by developing a landing website & online instant quoatation platform',
 			link: 'https://www.intechcircuits.com',
 			from: 'August 2022',
 			to: 'January 2023',
@@ -87,10 +83,7 @@ export const resume: resumeType = {
 		{
 			role: 'Full Stack Developer',
 			company: 'Open Source',
-			description: `
-			Supabase: Easy to use Backend as a Service
-			Juspay Remote Development: Deploy to host machine via SSH with NixOS
-			`,
+			description: 'Contributed to various popular projects',
 			link: 'https://github.com/faisalsaifii',
 			from: 'August 2022',
 			to: 'Present',
@@ -125,7 +118,7 @@ export const resume: resumeType = {
 			name: 'DevMeet',
 			company: 'Inderprastha Engineering College',
 			description:
-				'Coding Interview Platform (Online Video Conferencing with Integrated Development Environment). Technologies: ReactJS, ExpressJS, NodeJS, Javascript, Tailwind CSS, Judge0, Monaco Editor',
+				'Online Video Conferencing with Integrated Development Environment',
 			projectLink: 'https://developermeet.vercel.app',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'November 2022',
@@ -135,8 +128,7 @@ export const resume: resumeType = {
 		{
 			name: 'Hungy',
 			company: 'Inderprastha Engineering College',
-			description:
-				'Social Media & E-Commerce platform for foodies. Technologies used: ReactJS, ExpressJS, NodeJS, MongoDB, Javascript, CSS, Juspay',
+			description: 'Social Media & E-Commerce platform for foodies',
 			projectLink: 'https://www.hungy.tech',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'September 2023',
@@ -147,7 +139,7 @@ export const resume: resumeType = {
 			name: 'Pollify',
 			company: 'Open Source',
 			description:
-				'Slack App with easy to create polls functionality (Built in a night). Technologies used: Flask, Python, Slack Bolt SDK, MongoDB',
+				'Slack App with easy to create polls functionality (Built in a night)',
 			projectLink: 'https://www.hungy.tech',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'October 2023',

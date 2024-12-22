@@ -14,7 +14,6 @@ export default function Background() {
 					{resume.skills
 						.map((item) => ({ ...item, sort: Math.random() }))
 						.sort((a, b) => a.sort - b.sort)
-						.map(({ _, ...item }) => item)
 						.map((skill, index) => (
 							<SkillPill icon={skill.icon} key={index} name={skill.name} />
 						))}

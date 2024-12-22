@@ -1,5 +1,5 @@
 import { resume } from '../resume'
-import Button from './Button'
+// import Button from './Button'
 
 export default function Introduction() {
 	return (
@@ -25,12 +25,12 @@ export default function Introduction() {
 					</a>
 				))}
 			</div>
-			<Button
+			{/* <Button
 				text="Scroll to find out more"
 				icon="/icons/scroll-down.svg"
 				link="#Experience"
 				styles="absolute bottom-20"
-			/>
+			/> */}
 		</div>
 	)
 }
