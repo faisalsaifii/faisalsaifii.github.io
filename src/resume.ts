@@ -255,6 +255,12 @@ export const resume: resumeType = {
 			handle: '@faisalsaifii',
 		},
 		{
+			text: 'Resume',
+			icon: 'resume.svg',
+			handle: 'Resume',
+			link: 'https://docs.google.com/document/d/1JobiFOcYJt-PrUuiRr_J-oaHCLzcBsnfYBkxESH0myY/edit?usp=sharing',
+		},
+		{
 			text: 'Email',
 			icon: 'email.svg',
 			link: 'mailto:faisalsaifii@proton.me',

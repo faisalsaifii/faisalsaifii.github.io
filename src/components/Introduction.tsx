@@ -18,7 +18,7 @@ export default function Introduction() {
 						href={link}
 						key={index}
 						target="_blank"
-						className="flex gap-2 items-center hover:text-white bg-white bg-opacity-10 rounded-xl p-2 pr-4 hover:border-white hover:border-opacity-20 border border-transparent"
+						className="flex gap-2 items-center hover:text-white bg-white bg-opacity-10 rounded-xl p-2 pr-3 hover:border-white hover:border-opacity-20 border border-transparent"
 					>
 						<img width={30} src={`/icons/${icon}`} alt={text} />
 						<span className="text-xl">{handle}</span>
