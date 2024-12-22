@@ -7,12 +7,12 @@ export default function Introduction() {
 			<h1 className="font-black text-6xl sm:text-7xl text-center">
 				Faisal Saifi
 			</h1>
-			<p className="font-light text-md sm:text-lg text-center">
+			<p className="font-light text-md sm:text-lg text-center max-w-xl">
 				Full Stack Software developer with experience in front-end, back-end
 				development with system and UI design, experienced in leading cross
 				functional teams
 			</p>
-			<div className="flex justify-center items-center gap-4 flex-wrap w-screen">
+			<div className="flex justify-center items-center gap-4 flex-wrap max-w-xl">
 				{resume.socials.map(({ text, icon, link, handle }, index) => (
 					<a
 						href={link}

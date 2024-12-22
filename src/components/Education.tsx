@@ -7,7 +7,7 @@ export default function Education() {
 			className="flex flex-col items-center justify-center h-screen w-screen gap-4 snap-start snap-always relative"
 		>
 			<h2 className="font-black text-6xl sm:text-7xl">Education</h2>
-			<div className="flex flex-col gap-4 px-4">
+			<div className="flex flex-col gap-4 px-4 max-w-6xl">
 				{resume.education.map((ele, index) => (
 					<a
 						href={ele.link}

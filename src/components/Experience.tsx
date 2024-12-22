@@ -4,10 +4,10 @@ export default function Experience() {
 	return (
 		<div
 			id="Experience"
-			className="flex flex-col items-center justify-center h-screen w-screen gap-4 snap-start snap-always relative"
+			className="flex flex-col items-center justify-center h-screen w-screen gap-8 snap-start snap-always relative"
 		>
 			<h2 className="font-black text-6xl sm:text-7xl">Experience</h2>
-			<div className="flex flex-col gap-4 mx-4">
+			<div className="flex flex-col gap-4 mx-4 max-w-6xl">
 				{resume.experience.map((ele, index) => (
 					<div
 						className="flex flex-col rounded-md p-4 gap-4 hover:text-white border border-transparent hover:border-opacity-15 hover:border-white bg-white bg-opacity-10"
