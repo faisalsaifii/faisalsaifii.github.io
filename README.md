@@ -1,6 +1,6 @@
 # Faisal
 
-Deployment: https://faisalsaifii.github.io
+Live: https://faisalsaifii.github.io
 
 ## Running locally
 

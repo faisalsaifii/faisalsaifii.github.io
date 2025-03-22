@@ -1,52 +1,6 @@
-type resumeType = {
-	name: string
-	email: string
-	experience: experience[]
-	education: education[]
-	projects: {
-		name: string
-		company: string
-		description: string
-		projectLink: string
-		companyLink: string
-		from: string
-		to: string
-		icon: string
-	}[]
-	skills: {
-		name: string
-		icon: string
-	}[]
-	socials: social[]
-}
+import type { Resume } from './resume.d'
 
-type education = {
-	degree: string
-	institution: string
-	description: string
-	link: string
-	from: string
-	to: string
-}
-
-type experience = {
-	role: string
-	company: string
-	description: string
-	link: string
-	from: string
-	to: string
-	icon: string
-}
-
-type social = {
-	text: string
-	icon: string
-	link: string
-	handle?: string
-}
-
-export const resume: resumeType = {
+export const resume: Resume = {
 	name: 'Faisal',
 	email: 'the.m.faisal.s@gmail.com',
 	experience: [
@@ -56,7 +10,7 @@ export const resume: resumeType = {
 			description: `
 				Worked as part of various teams to automate the process of integration by 70%
 			`,
-			link: 'https://juspay.in',
+			link: 'https://juspay.io',
 			from: 'July 2023',
 			to: 'Present',
 			icon: '/icons/juspay.svg',
@@ -119,7 +73,7 @@ export const resume: resumeType = {
 			company: 'Inderprastha Engineering College',
 			description:
 				'Online Video Conferencing with Integrated Development Environment',
-			projectLink: 'https://developermeet.vercel.app',
+			projectLink: 'https://github.com/faisalsaifii/DevMeet',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'November 2022',
 			to: 'December 2022',
@@ -129,7 +83,7 @@ export const resume: resumeType = {
 			name: 'Hungy',
 			company: 'Inderprastha Engineering College',
 			description: 'Social Media & E-Commerce platform for foodies',
-			projectLink: 'https://www.hungy.tech',
+			projectLink: 'https://hungy.vercel.app',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'September 2023',
 			to: 'May 2024',
@@ -140,7 +94,7 @@ export const resume: resumeType = {
 			company: 'Open Source',
 			description:
 				'Slack App with easy to create polls functionality (Built in a night)',
-			projectLink: 'https://www.hungy.tech',
+			projectLink: 'https://github.com/faisalsaifii/Pollify',
 			companyLink: 'https://www.ipec.org.in',
 			from: 'October 2023',
 			to: 'September 2023',
@@ -239,12 +193,6 @@ export const resume: resumeType = {
 			icon: 'twitter.svg',
 			link: 'https://x.com/faisalsaifiii',
 			handle: '@faisalsaifiii',
-		},
-		{
-			text: 'Instagram',
-			icon: 'instagram.svg',
-			link: 'https://www.instagram.com/faisalsaifii',
-			handle: '@faisalsaifii',
 		},
 		{
 			text: 'Resume',
